@@ -9,3 +9,15 @@ and
 
 You can also find me on
 [<img src="https://github.com/ImJasonH/ImJasonH/blob/master/twitter.png" alt="Twitter" width="20" height="20"/>Twitter](https://twitter.com/imjasonh).
+
+## Resume
+
+My resume is a CRD you can install on your Kubernetes cluster:
+
+```
+kubectl apply -f https://raw.githubusercontent.com/ImJasonH/ImJasonH/master/resume-crd.yaml
+```
+
+(You wouldn't install something off the internet without [reading it
+first](https://raw.githubusercontent.com/ImJasonH/ImJasonH/master/resume-crd.yaml),
+_would you?!_)
