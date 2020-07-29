@@ -92,6 +92,10 @@ status:
       duration: 2015 - present
       contributions:
       - |
+        Currently replatforming Cloud Build's execution infrastructure on top of
+        Tekton, to increase feature velocity and provide workload portability
+        for mainly enterprise customers.
+      - |
         Designed, built and launched initial source-based build triggering
         solution
       - |
@@ -144,3 +148,10 @@ status:
     degree: Bachelors of Science
     major: Computer Science
     graduated: 2007
+  extraCurriculars:
+  - Raising two kids while working from during a global pandemic.
+  - Drinking coffee (see above)
+  - Buying domain names without finishing the projects meant to be hosted there.
+  - |
+    Reading all the way to the end of long YAML documents, looking for easter
+    eggs. 🥚
