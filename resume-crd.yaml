@@ -1,0 +1,146 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: resumes.imjasonh.com
+  labels:
+    version: "devel"
+spec:
+  group: imjasonh.com
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+  names:
+    kind: Resume
+    plural: resumes
+    categories:
+    - hire-me
+  scope: Namespaced
+  version: v1alpha1
+
+---
+
+apiVersion: imjasonh.com/v1alpha1
+kind: Resume
+metadata:
+  name: jason-hall
+  annotations:
+    imjasonh.com/full-name: Jason Hall
+    imjasonh.com/email: imjasonh@gmail.com
+    imjasonh.com/website: https://www.imjasonh.com
+    imjasonh.com/github: https://github.com/imjasonh
+    imjasonh.com/location: Brooklyn, NY
+spec:
+  skills:
+  - Kubernetes APIs and controllers
+  - Mentoring junior engineers
+  - Code and design reviews
+  - YAML engineering
+  - Full product ownership
+  - Release management and on-call
+  - Container image internals
+  - Git data model and protocol
+status:
+  employment:
+  - company: Google, Inc.
+    duration: 2007 - present
+    teams:
+    - name: Tekton
+      url: https://tekton.dev/
+      description: |
+          Powerful and flexible open-source framework for creating CI/CD
+          systems, allowing developers to build, test, and deploy across cloud
+          providers and on-premise systems.
+      duration: 2019 - present
+      contributions:
+      - |
+        Led initial Knative Build effort to bring pluggable build and CI/CD
+        primitives to Kubernetes
+      - |
+        Successfully navigated the donation of Knative Build Pipelines code to
+        the Continuous Delivery Foundation to seed the Tekton project
+      - |
+        Co-presented at Kubecon NA 2019:
+        https://www.youtube.com/watch?v=iz9_omZ0ctk
+      - |
+        Designed and implemented Script mode:
+        https://github.com/tektoncd/pipeline/pull/1432
+      - |
+        Completed a major TaskRun→Pod code refactor:
+        https://github.com/tektoncd/pipeline/issues/1519
+      - |
+        Proposed a Tekton API spec:
+        https://docs.google.com/document/d/1bWPMCKng7dJu6MRj0GmaSqU61YpSjr9HrTlK-nAHJ3Q/edit#
+      - |
+        Proposed and building persistent searchable Results API:
+        https://docs.google.com/document/d/1-XBYQ4kBlCHIHSVoYAAf_iC01_by_KoK2aRVO0t8ZQ0/edit
+      - |
+        Built an experimental Octant plugin:
+        https://github.com/tektoncd/experimental/tree/master/octant-plugin
+      - |
+        Proposed and building a resource versioning solution:
+        https://docs.google.com/document/d/1zUVrIbGZh2R9dawKQ9Hm1Cx3GevKIfOcRO3fFLdmBDc/edit#heading=h.tp9mko2koenr
+      - |
+        Elected to Tekton's Governance committee:
+        https://github.com/tektoncd/community/blob/master/governance.md
+    - name: Google Cloud Build
+      url: https://cloud.google.com/cloud-build
+      description: |
+          Hosted container-based build/test/deploy service with typical
+          sub-second start time, powering all App Engine and Cloud Functions
+          deployments
+      duration: 2015 - present
+      contributions:
+      - |
+        Designed, built and launched initial source-based build triggering
+        solution
+      - |
+        Integrated Cloud Key Management:
+        https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials
+      - |
+        Maintained public builder image repo:
+        https://github.com/GoogleCloudPlatform/cloud-builders
+    - name: Google Cloud Source Repositories
+      url:  https://cloud.google.com/source-repositories
+      description: |
+         Free hosted private Git repos and integrations with various Google
+         Cloud services
+      contributions:
+      - |
+        Designed, built and launched secure two-way repo mirroring for GitHub
+        and Bitbucket
+      - |
+        Repurposed and relaunched infrastructure from Google Code as a Google
+        Cloud product
+      - |
+        Designed, built and launched Git push-to-deploy for App Engine
+      - |
+        Contributed to sunsetting Google Code; sole engineer on one-click
+        export-to-GitHub service which successfully migrated 400k+ repos
+    - name: Google APIs
+      description: |
+          Common infrastructure and client libraries for new Google APIs
+      duration: 2010 - 2011
+      contributions:
+      - |
+        Built Google APIs Explorer, an interactive web-based tool for
+        developers to experiment with Google APIs (now defunct)
+    - name: AdWords "My Client Center"
+      description: |
+          Enabled large advertisers and resellers (e.g., eBay, Amazon) to
+          manage supermassive ad campaigns
+      duration: 2008 - 2010
+      contributions:
+      - Complete frontend rewrite in Google Web Toolkit (GWT)
+    - name: Google Reader
+      description: |
+          Web-based RSS reader; everyone's favorite cancelled Google product
+      duration: Summer 2007 (internship)
+      contributions:
+      - Improved feed-viewing experience for signed-out users
+  education:
+  - name: Kent State University
+    url: https://kent.edu
+    degree: Bachelors of Science
+    major: Computer Science
+    graduated: 2007
