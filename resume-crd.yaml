@@ -97,12 +97,15 @@ status:
       duration: 2015 - present
       contributions:
       - |
-        Currently replatforming Cloud Build's execution infrastructure on top of
-        Tekton, to increase feature velocity and provide workload portability
-        for mainly enterprise customers.
+        Launching Cloud Build on Kubernetes, powered by Tekton, to provide a
+        GCB-compatible execution environment powered by users' own GKE clusters
+      - |
+        Long term, replatforming Cloud Build's execution infrastructure on top of
+        Tekton and GKE, to increase feature velocity and provide workload
+        portability for mainly enterprise customers.
       - |
         Designed, built and launched initial source-based build triggering
-        solution
+        solution ("putting _both_ C's in CI/CD" 😎)
       - |
         Integrated Cloud Key Management:
         https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials
