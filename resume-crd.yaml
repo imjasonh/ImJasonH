@@ -32,7 +32,7 @@ metadata:
     imjasonh.com/location: Brooklyn, NY
 spec:
   skills:
-  - Kubernetes APIs and controllers
+  - Kubernetes APIs, CRDs and controllers
   - Mentoring junior engineers
   - Code and design reviews
   - YAML engineering
@@ -40,6 +40,7 @@ spec:
   - Release management and on-call
   - Container image internals
   - Git data model and protocol
+  
 status:
   employment:
   - company: Google, Inc.
@@ -69,20 +70,24 @@ status:
         Completed a major TaskRun→Pod code refactor:
         https://github.com/tektoncd/pipeline/issues/1519
       - |
-        Proposed a Tekton API spec:
-        https://docs.google.com/document/d/1bWPMCKng7dJu6MRj0GmaSqU61YpSjr9HrTlK-nAHJ3Q/edit#
+        Proposed and building extensible plugin mechanism: Custom Tasks:
+        https://github.com/tektoncd/community/blob/master/teps/0002-custom-tasks.md
       - |
-        Proposed and building persistent searchable Results API:
-        https://docs.google.com/document/d/1-XBYQ4kBlCHIHSVoYAAf_iC01_by_KoK2aRVO0t8ZQ0/edit
+        Proposed an OCI image based config versioning scheme:
+        https://github.com/tektoncd/community/blob/master/teps/0005-tekton-oci-bundles.md
+      - |
+        Defined a minimal Tekton API spec:
+        https://github.com/tektoncd/pipeline/blob/master/docs/api-spec.md
+      - |
+        Proposed persistent searchable Results API:
+        https://github.com/tektoncd/community/pull/217
       - |
         Built an experimental Octant plugin:
         https://github.com/tektoncd/experimental/tree/master/octant-plugin
       - |
-        Proposed and building a resource versioning solution:
-        https://docs.google.com/document/d/1zUVrIbGZh2R9dawKQ9Hm1Cx3GevKIfOcRO3fFLdmBDc/edit#heading=h.tp9mko2koenr
-      - |
         Elected to Tekton's Governance committee:
         https://github.com/tektoncd/community/blob/master/governance.md
+        
     - name: Google Cloud Build
       url: https://cloud.google.com/cloud-build
       description: |
@@ -104,6 +109,7 @@ status:
       - |
         Maintained public builder image repo:
         https://github.com/GoogleCloudPlatform/cloud-builders
+        
     - name: Google Cloud Source Repositories
       url:  https://cloud.google.com/source-repositories
       description: |
@@ -121,6 +127,7 @@ status:
       - |
         Contributed to sunsetting Google Code; sole engineer on one-click
         export-to-GitHub service which successfully migrated 400k+ repos
+        
     - name: Google APIs
       description: |
           Common infrastructure and client libraries for new Google APIs
@@ -129,6 +136,7 @@ status:
       - |
         Built Google APIs Explorer, an interactive web-based tool for
         developers to experiment with Google APIs (now defunct)
+        
     - name: AdWords "My Client Center"
       description: |
           Enabled large advertisers and resellers (e.g., eBay, Amazon) to
@@ -136,20 +144,23 @@ status:
       duration: 2008 - 2010
       contributions:
       - Complete frontend rewrite in Google Web Toolkit (GWT)
+      
     - name: Google Reader
       description: |
           Web-based RSS reader; everyone's favorite cancelled Google product
       duration: Summer 2007 (internship)
       contributions:
       - Improved feed-viewing experience for signed-out users
+      
   education:
   - name: Kent State University
     url: https://kent.edu
     degree: Bachelors of Science
     major: Computer Science
     graduated: 2007
+    
   extraCurriculars:
-  - Raising two kids while working from during a global pandemic.
+  - Raising two kids while working from during a global pandemic. 😷
   - Drinking coffee (see above)
   - Buying domain names without finishing the projects meant to be hosted there.
   - |
