@@ -56,10 +56,11 @@ status:
       contributions:
       - |
         Led initial Knative Build effort to bring pluggable build and CI/CD
-        primitives to Kubernetes
+        primitives to Kubernetes.
       - |
         Successfully navigated the donation of Knative Build Pipelines code to
-        the Continuous Delivery Foundation to seed the Tekton project
+        the Continuous Delivery Foundation (https://cd.foundation) to seed
+        the Tekton project.
       - |
         Co-presented at Kubecon NA 2019:
         https://www.youtube.com/watch?v=iz9_omZ0ctk
@@ -109,9 +110,6 @@ status:
       - |
         Integrated Cloud Key Management:
         https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials
-      - |
-        Maintained public builder image repo:
-        https://github.com/GoogleCloudPlatform/cloud-builders
         
     - name: Google Cloud Source Repositories
       url:  https://cloud.google.com/source-repositories
@@ -154,6 +152,30 @@ status:
       duration: Summer 2007 (internship)
       contributions:
       - Improved feed-viewing experience for signed-out users
+
+  otherProjects:
+  - name: ko
+    url: https://github.com/google/ko
+    description: |
+      Efficiently build and publish minimal container images containing
+      Go binaries, and easily deploy them to Kubernetes
+  - name: go-containerregistry
+    url: https://github.com/google/go-containerregistry
+    description: |
+      Go package to operate on container images. Used by ko, buildpacks,
+      Tekton, Knative, GCB, skaffold, kaniko, and many others.
+  - name: kontain.me
+    url: https://kontain.me
+    description: |
+      A variety of experiments for providing a container image registry
+      that produces images at request-time, including building images
+      using ko, buildpacks, and more.
+  - name: GCPing
+    url: http://gcping.com
+    description: |
+      Web UI to measure relative latency between your browser and GCP
+      regions. Used by Google sales engieners to help customers pick a
+      region nearest to their customers.
       
   education:
   - name: Kent State University
