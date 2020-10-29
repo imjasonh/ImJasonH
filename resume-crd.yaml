@@ -33,7 +33,6 @@ metadata:
 spec:
   skills:
   - Kubernetes APIs, CRDs and controllers
-  - Mentoring junior engineers
   - Code and design reviews
   - YAML engineering
   - Full product ownership
