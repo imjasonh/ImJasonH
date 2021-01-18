@@ -42,8 +42,10 @@ spec:
   
 status:
   employment:
+  - company: Red Hat, Inc.
+    duration: 2021 - present
   - company: Google, Inc.
-    duration: 2007 - present
+    duration: 2007 - 2021
     teams:
     - name: Tekton
       url: https://tekton.dev/
