@@ -9,6 +9,8 @@ Before that I was at [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/c
 You can also find me on
 [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/twitter.png" alt="Twitter" width="20" height="20"/>Twitter](https://twitter.com/imjasonh).
 
+I contribute to https://github.com/google/ko and https://github.com/google/go-containerregistry
+
 ## Resume
 
 My resume is a CRD you can install on your Kubernetes cluster:
