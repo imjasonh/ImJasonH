@@ -11,6 +11,8 @@ You can also find me on
 
 I contribute to https://github.com/google/ko and https://github.com/google/go-containerregistry
 
+I build fun toys like https://kontain.me and https://gcping.com
+
 ## Resume
 
 My resume is a CRD you can install on your Kubernetes cluster:
