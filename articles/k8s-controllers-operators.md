@@ -142,4 +142,4 @@ Thank you for coming to my TED Talk. :)
 
 ## Comments?
 
-If you spotted a typo or disagree with my definitions, please [file an issue](https://github.com/ImJasonH/ImJasonH/issues/new).
+If you spotted a typo or disagree with my definitions, please [file an issue](https://github.com/ImJasonH/ImJasonH/issues/new?title=k8s-controllers-operators:%20YOUR%20ISSUE%20TITLE).
