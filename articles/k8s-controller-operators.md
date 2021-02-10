@@ -1,3 +1,7 @@
+_First Posted February 10, 2020_
+
+Self Link: https://articles.imjasonh.com/k8s-controller-operator.md
+
 # Kubernetes Controllers vs Operators
 
 While reading Kubernetes documentation (I know, I know, already a bad idea), you will come across the terms "Controller" and "Operator" very often.
