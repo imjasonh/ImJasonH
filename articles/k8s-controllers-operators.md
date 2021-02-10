@@ -1,6 +1,6 @@
 _First Posted February 10, 2020_
 
-Self Link: https://articles.imjasonh.com/k8s-controller-operator.md
+Self Link: https://articles.imjasonh.com/k8s-controllers-operators.md
 
 # Kubernetes Controllers vs Operators
 
