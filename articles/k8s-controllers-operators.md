@@ -1,5 +1,7 @@
 _First Posted February 10, 2020_
 
+_Last Updated February 23, 2020_
+
 Self Link: https://articles.imjasonh.com/k8s-controllers-operators.md
 
 # Kubernetes Controllers and Operators
@@ -121,6 +123,10 @@ You might be asking yourself, "how does the Operator itself get upgraded, downgr
 Operator operation is probably best left to a human performing manual processes. As such, upgrades, etc., of an Operator are likely to be rare, or at least much less common that similar operations of the controller components it operates.
 
 In some cases, Operators can be installed and managed by components running outside the cluster, in some cases by cloud providers running the underlying platform.
+
+### Aside: Non-Kubernetes-Native Installations
+
+Besides other controllers, Operators can manage installations of other non-Kubernetes-native software, like databases. For example, there are a number of popular PostgreSQL operators ([here's one](https://postgres-operator.readthedocs.io/en/latest/)) that install, upgrade, migrate and manage distributed PostgreSQL installations in a Kubernetes cluster.
 
 ## Why The Confusion?
 
