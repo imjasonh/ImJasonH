@@ -13,6 +13,8 @@ I contribute to https://github.com/google/ko and https://github.com/google/go-co
 
 I build fun toys like https://kontain.me and https://gcping.com
 
+I'm trying an experiment where I run office hours on Fridays. Book a slot here: https://calendly.com/jasonhall-1/30min
+
 ## Resume
 
 My resume is a CRD you can install on your Kubernetes cluster:
