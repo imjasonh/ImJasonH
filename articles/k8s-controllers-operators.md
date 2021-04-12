@@ -1,6 +1,6 @@
-_First Posted February 10, 2020_
+_First Posted February 10, 2021_
 
-_Last Updated February 23, 2020_
+_Last Updated April 12, 2021_
 
 Self Link: https://articles.imjasonh.com/k8s-controllers-operators.md
 
