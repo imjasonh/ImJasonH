@@ -38,7 +38,7 @@ So then what's an Operator? Well, there's a clue in the name. Operators help wit
 
 An Operator _is a Controller_ (i.e., it runs a control loop) that reconciles the observed operational state of _some piece of software_ toward a desired operational state.
 
-Operators are usually responsible for watching a bundle of Controllers, to make sure they're happy and healthy. Operators can also watch other types of software running on the cluster, to perform database maintenance and migrations.
+Operators can be responsible for watching a bundle of Controllers, to make sure they're happy and healthy. Operators can also watch other types of software running on the cluster, to perform database maintenance and migrations ([here's an Operator for PostgreSQL](https://postgres-operator.readthedocs.io/en/latest/)).
 
 Operators are particularly useful when it comes time to upgrade (or downgrade) a bundle of software on the cluster. To accomplish this, the desired state of those components can be described in an object the Operator watches. When the state of the object changes, the Operator performs some action like an upgrade, and updates that object's status.
 
@@ -97,6 +97,9 @@ apiVersion: operator.example.dev/v1alpha1
 kind: FeatureAddOn
 ...
 status:
+  observedVersions:
+    controller: v0.1.0  # <-- Rolled back!
+    ...
   conditions:
   - type: Available
     status: False
@@ -104,9 +107,9 @@ status:
     message: "Component 'controller' upgrade failed: ah ah ah, you didn't say the magic word."
 ```
 
-The Operator can validate that the requested upgrade is valid -- maybe `webhook` and `controller` always have to be upgraded together, or maybe `v0.2.0` isn't released yet, or maybe you have to upgrade to at least `v0.1.5` before upgrading to `v0.2.0` -- all of this custom logic can be enforced by the Operator.
+The Operator can validate that the requested upgrade is valid -- maybe `webhook` and `controller` always have to be upgraded together, or maybe `v0.2.0` isn't released yet, or maybe you have to upgrade to at least `v0.1.5` before upgrading to `v0.2.0` -- all of this custom logic can be enforced and executed by the Operator.
 
-It's not just about whole component upgrades either. Operators can be used to turn on and off smaller features, scale up/down controller components, and more. But the important distinction is that these are _operations_ (in the "DevOps" sense), and not related to the day-to-day usage of whatever functionality is provided to end users by the _Controller_ components.
+It's not just about whole component upgrades either. Operators can be used to turn on and off features, scale up/down controller components, and more. But the important distinction is that these are _operations_ (in the "DevOps" sense), and not related to the day-to-day usage of whatever functionality is provided to end users by the _Controller_ components.
 
 The `FeatureAddOn` type above could be namespaced or cluster-scoped, meaning the Operator watching it could be responsible for one cluster-wide installation of the controller components, or even multiple installations across multiple namespaces.
 
@@ -124,13 +127,11 @@ Operator operation is probably best left to a human performing manual processes.
 
 In some cases, Operators can be installed and managed by components running outside the cluster, in some cases by cloud providers running the underlying platform.
 
-### Aside: Non-Kubernetes-Native Installations
-
-Besides other controllers, Operators can manage installations of other non-Kubernetes-native software, like databases. For example, there are a number of popular PostgreSQL operators ([here's one](https://postgres-operator.readthedocs.io/en/latest/)) that install, upgrade, migrate and manage distributed PostgreSQL installations in a Kubernetes cluster.
-
 ## Why The Confusion?
 
 I think the main source of confusion comes from the fact that, fundamentally, both Controllers and Operators perform a similar action -- running a control loop, and reconciling state. Indeed, Operators are a _kind_ of Controller. As such, the code that powers the two can look very similar: observe state, take action, update status; rinse, repeat.
+
+Operators are very common when operating software of all kinds inside a Kubernetes cluster, and Controllers that reconcile custom resources are becoming more prevalant as CRDs become more common in the ecosystem.
 
 The [Operator Framework](https://operatorframework.io/) is a widely used framework for developing Operators, which includes the [`operator-sdk`](https://github.com/operator-framework/operator-sdk), which itself uses the [`controller-runtime`](https://github.com/kubernetes-sigs/controller-runtime) framework to more easily program control loops. Neither Operators nor Controllers _require_ any of these frameworks -- at their core, they just need to watch for changes, take action, and update status -- but they can be useful when getting started.
 
