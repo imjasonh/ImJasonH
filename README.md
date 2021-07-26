@@ -26,3 +26,10 @@ kubectl apply -f https://raw.githubusercontent.com/ImJasonH/ImJasonH/main/resume
 (You wouldn't install something off the internet without [reading it
 first](https://raw.githubusercontent.com/ImJasonH/ImJasonH/main/resume-crd.yaml),
 _would you?!_)
+
+## Talks, etc.
+
+- [Russian Doll: Extending Containers with Nested Processes](https://www.youtube.com/watch?v=iz9_omZ0ctk) at KubeCon NA 2019 w/ [Christie Wilson](https://github.com/bobcatwilson)
+- [Introduction to Shipwright](https://www.youtube.com/watch?v=N5sVrygywZk) at cdCon 2021
+- [Continuous Delivery, Defined](https://cdeliveryfdn.buzzsprout.com/1008697/3823307-continuous-delivery-defined) on The Pipeline: All things CD & DevOps Podcast by The CD Foundation w/ [Dan Lorenc](https://github.com/dlorenc) and [Christie Wilson](https://github.com/bobcatwilson)
+- [What does the Continuous Delivery Foundation do?](https://www.youtube.com/watch?v=ytE-6p2jtSU) on [communitycentral.tv](https://communitycentral.tv) w/ Adam Kaplan, Andrea Frittoli, Vincent Demeester
