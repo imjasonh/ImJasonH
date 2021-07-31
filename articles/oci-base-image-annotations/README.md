@@ -116,4 +116,4 @@ But, if this use case sounds interesting to you, I think it's worth pursuing, an
 
 ---
 
-If you have questions or comments, please [file an issue](https://github.com/imjasonh/imjasonh/issues/new) or suggest an edit in a [pull request](https://github.com/imjasonh/imjasonh/pulls/new).
+If you have questions or comments, please [file an issue](https://github.com/imjasonh/imjasonh/issues/new?title=oci-base-image-annotations) or [suggest an edit in a pull request](https://github.com/imjasonh/ImJasonH/edit/main/articles/oci-base-image-annotations/README.md).
