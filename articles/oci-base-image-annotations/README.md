@@ -1,5 +1,11 @@
 # OCI Base Image Annotations
 
+https://articles.imjasonh.com/oci-base-image-annotations<br>
+Jason Hall<br>
+_First published July 30, 2021_
+
+---
+
 When building and securing a container image, it's important to consider the security of your base image.
 In a lot of cases, even if your code is perfectly secure (chances are it isn't), if you're based on an insecure base image, it doesn't matter much.
 
