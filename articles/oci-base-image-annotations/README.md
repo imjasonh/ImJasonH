@@ -47,7 +47,7 @@ When you've detected that your base image has updates, you can rebuild, or even 
 If you remember where you built the image from, and still have source code available -- perhaps consulting the other OCI standard annotations for `image.source` and `image.version` -- then you can rebuild again from that revision.
 A `FROM alpine:3.14` directive will pick up the new base image version, for example.
 
-![](./base.png)
+<p align="center"><img src="./base.png" width="50%"></img></p>
 
 #### Rebasing
 
@@ -75,7 +75,7 @@ If the `alpine-jre` image were annotated to describe this relationship, it could
 Likewise, if your image pointed to `alpine-jre`, when that rebuilt image is validated and tagged, your image could detect it and update accordingly.
 Taken to the extreme, a long chain of update signals could be sent along a chain of base images, validating the update along the way until, finally, it reaches your application sitting on top.
 
-![](./base-chain.png)
+<p align="center"><img src="./base-chain.png" width="50%"></img></p>
 
 ### When can I use it?
 
