@@ -3,6 +3,7 @@
 https://articles.imjasonh.com/oci-base-image-annotations<br>
 Jason Hall<br>
 _First published July 30, 2021_
+_Last updated August 2, 2021_
 
 ---
 
@@ -12,7 +13,7 @@ In a lot of cases, even if your code is perfectly secure (chances are it isn't),
 Base images provide a base operating system environment for your containers, whether they're built using [a Dockerfile's `FROM` directive](https://docs.docker.com/engine/reference/builder/#from), or Buildpacks, configured by the [run-image](https://buildpacks.io/docs/concepts/components/stack/).
 
 The problem is, once your image is built, information about the base image is completely lost.
-Your image is just a collection of layers, and there's no telling where it came `FROM`, let alone whether what it came `FROM` has available fixes for any vulnerabilities it was rude enough to include for you.
+To the registry, and to any client that pulls your image, it's just a collection of layers, and there's no telling what image it came `FROM`, let alone whether what it came `FROM` has available fixes for any vulnerabilities it was rude enough to include for you.
 
 ### Base Image Annotations
 
@@ -21,7 +22,7 @@ Images can be given these annotations to point to their base images, to provide 
 
 The new standard annotations are:
 
-- **`org.opencontainers.image.base.name`**: the mutable reference to the image (e.g., `docker.io/alpine:3.14`)
+- **`org.opencontainers.image.base.name`**: the mutable reference to the base image (e.g., `docker.io/alpine:3.14`)
 - **`org.opencontainers.image.base.digest`**: the immutable digest of the base image at the time the image was built on it (e.g., `sha256:adab384...`)
 
 How is this information useful?
@@ -109,11 +110,14 @@ If the base image isn't available by its mutable reference either, then neither 
 ### What about images used in [multi-stage Dockerfile builds](https://docs.docker.com/develop/develop-images/multistage-build/)?
 
 The base image annotations are only intended to cover the image that provides the actual base image layers for the final image, and not any image used in the process of building, such as when using `FROM golang AS builder`.
-One could imagine wanting to detect and trigger a rebuild when a new `golang` image is available, for example.
+One could imagine wanting to detect and trigger a rebuild when a new `golang` image is available, for example, but the existing base image annotations don't help with this.
 
-There was quite a bit of discussion about annotating other relevant images in the [PR](https://github.com/opencontainers/image-spec/pull/822/) to specify the base image annotations, but it seemed like it would be easier to describe and make use of an annotation describing a single pointer to another image, rather than multiple pointers to multiple relevant images.
-But, if this use case sounds interesting to you, I think it's worth pursuing, and there was interest in the OCI community to consider it.
+There was quite a bit of discussion about annotating other relevant images in the [PR](https://github.com/opencontainers/image-spec/pull/822/) to specify the base image annotations, but it seemed like it would be easier to describe and make use of an annotation describing a single pointer to another image, rather than multiple pointers to multiple relevant images, resulting in a graph of possibly interesting other images.
+If this use case sounds interesting to you, I definitely think it's worth pursuing, and there was interest in the OCI community to consider it.
 
 ---
 
 If you have questions or comments, please [file an issue](https://github.com/imjasonh/imjasonh/issues/new?title=oci-base-image-annotations) or [suggest an edit in a pull request](https://github.com/imjasonh/ImJasonH/edit/main/articles/oci-base-image-annotations/README.md).
+
+edit August 2, 2021:
+- buildah issue to set the annotations: https://github.com/containers/buildah/issues/3415
