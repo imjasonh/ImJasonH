@@ -2,7 +2,7 @@
 
 https://articles.imjasonh.com/oci-base-image-annotations<br>
 Jason Hall<br>
-_First published July 30, 2021_
+_First published July 30, 2021_<br>
 _Last updated August 2, 2021_
 
 ---
