@@ -121,3 +121,6 @@ If you have questions or comments, please [file an issue](https://github.com/imj
 
 edit August 2, 2021:
 - buildah issue to set the annotations: https://github.com/containers/buildah/issues/3415
+
+edit Auguest 3, 2021:
+- filed a roadmap feature request for `docker build`: https://github.com/docker/roadmap/issues/243
