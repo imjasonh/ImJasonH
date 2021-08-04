@@ -90,7 +90,7 @@ Well, now, but not very easily.
 
 The annotation has just been added to the OCI spec, so not much tooling produces it in the wild today.
 You can annotate images with `docker`'s experimental [`docker manifest annotate`](https://docs.docker.com/engine/reference/commandline/manifest_annotate/) command, or [`crane mutate --annotation`](https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_mutate.md) to set this information, but build tools like Buildpacks and [`docker buildx`](https://docs.docker.com/buildx/working-with-buildx/) and [Kaniko](https://github.com/GoogleContainerTools/kaniko) could set these for you.
-`ko` will set these annotations in the next release.
+`ko` will set these annotations in the next release. [Buildah](https://github.com/containers/buildah) will set the annotations automatically starting with the next minor version v1.23.0.
 
 On the other end, there isn't any tooling today that can understand and make use of the annotation.
 Buildpacks' [`pack rebase`](https://buildpacks.io/docs/concepts/operations/rebase/) could use the annotation to rebase images annotated with base image information, whether they were originally built with Buildpacks or not.
