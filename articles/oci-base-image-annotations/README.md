@@ -3,7 +3,7 @@
 https://articles.imjasonh.com/oci-base-image-annotations<br>
 Jason Hall<br>
 _First published July 30, 2021_<br>
-_Last updated August 2, 2021_
+_Last updated August 12, 2021_
 
 ---
 
@@ -96,6 +96,8 @@ Support in other tools is progressing as well:
 - [`ko`](https://github.com/google/ko) will set these annotations in the next release.
 - [Buildah](https://github.com/containers/buildah) will set the annotations automatically starting with the next minor version v1.23.0.
 - [`crane append`](https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_append.md) will support a `--set-base-image-annotations` flag in its next release ([PR](https://github.com/google/go-containerregistry/pull/1098)).
+- Feature request for [buildpacks](https://github.com/buildpacks/spec/issues/243)
+- Feature request for [kaniko](https://github.com/GoogleContainerTools/kaniko/issues/1720)
 
 On the other end, there isn't any tooling today that can understand and make use of the annotation.
 Buildpacks' [`pack rebase`](https://buildpacks.io/docs/concepts/operations/rebase/) could use the annotation to rebase images annotated with base image information, whether they were originally built with Buildpacks or not.
@@ -129,3 +131,6 @@ edit August 2, 2021:
 
 edit Auguest 3, 2021:
 - filed a roadmap feature request for `docker build`: https://github.com/docker/roadmap/issues/243
+
+edit August 12, 2021:
+- added FR links for buildpacks and kaniko
