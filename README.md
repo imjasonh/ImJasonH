@@ -2,18 +2,16 @@
 
 ### (he/him)
 
-I recently joined [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/redhat.png" alt="Red Hat" width="26" height="20" />Red Hat](https://redhat.com) working on developer tools, including [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/tekton.png" alt="Tekton" width="20" height="20"/>Tekton](https://tekton.dev).
+I work at [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/redhat.png" alt="Red Hat" width="26" height="20" />Red Hat](https://redhat.com) working on developer tools, including [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/tekton.png" alt="Tekton" width="20" height="20"/>Tekton](https://tekton.dev).
 
 Before that I was at [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/cloud.png" alt="Google Cloud" width="20" height="20" />Google Cloud](https://cloud.google.com), where I cofounded [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/gcb.png" alt="Google Cloud Build" width="20" height="20" />Google Cloud Build](https://cloud.google.com/cloud-build). 
 
 You can also find me on
 [<img src="https://github.com/ImJasonH/ImJasonH/blob/main/twitter.png" alt="Twitter" width="20" height="20"/>Twitter](https://twitter.com/imjasonh).
 
-I contribute to https://github.com/google/ko and https://github.com/google/go-containerregistry
+I contribute to [`ko`](https://github.com/google/ko) and [go-containerregistry](https://github.com/google/go-containerregistry)
 
 I build fun toys like https://kontain.me and https://gcping.com
-
-I'm trying an experiment where I run office hours on Fridays. Book a slot here: https://calendly.com/jasonhall-1/30min
 
 ## Resume
 
