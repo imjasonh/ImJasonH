@@ -260,3 +260,7 @@ If I had to sum it all up, it would be this: understand the tools you're using, 
 After considering the alternatives, `docker build` and Dockerfiles _might_ still be the best solution for you. They have the distinct advantage of working for you today, and inertia is real. But I'd just encourage you to consider what value you're getting out of them, and what inefficiencies and vulnerabilities they might be introducing.
 
 Thank you for coming to my TED Talk.
+
+---
+
+If you have questions or comments, please [file an issue](https://github.com/imjasonh/imjasonh/issues/new?title=moving-and-building-images) or [suggest an edit in a pull request](https://github.com/imjasonh/ImJasonH/edit/main/articles/moving-and-building-images/README.md).
