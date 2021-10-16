@@ -18,7 +18,7 @@ I mean, where do you even start. But I knew right away it would have to be somet
 
 So I wrote what I considered to be a Good Tweet™️, hit Send, and went back to sipping my pumpkin spice latte in my thick cable knit sweater overlooking a quiet lake.
 
-[The Tweet In Question]((https://twitter.com/ImJasonH/status/1446624521507819521)) said:
+[The Tweet In Question](https://twitter.com/ImJasonH/status/1446624521507819521) said:
 
 > You don't need `docker build` to build a container image, and you don't need to `docker pull / tag / push` to move one around. In a lot of cases it's actively slowing you down, or making you less secure.
 
