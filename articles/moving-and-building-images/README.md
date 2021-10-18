@@ -253,6 +253,25 @@ For Node, you can kinda sorta maybe do something like `ko` using [deno](https://
 
 The same sort of thing should be possible with Rust. You could build the Rust executable with `cargo build` and `crane append` it to a base image that provides glibc. Again, if this is interesting to you, let me know and we can see how it works.
 
+#### Buildpacks
+
+Another alternative worth considering in this case is [CNCF Buildpacks](https://buildpacks.io/). Using Buildpacks, you can produce an image from source in a variety of languages (including Go), without having to write a Dockerfile. Buildpacks take care to produce images that are highly cacheable, for faster pushes and pulls.
+
+The main situation where Buildpacks shine is when a platform provides an opinionated set of approvder builders, in a variety of languages, so that you as a developer can just invoke them and get a runnable image. The platform in this case might be a serverless platform like Heroku or Cloud Foundry or Google Cloud Run, or your company's internal runtime platform team which is responsible for defining and maintaining the set of approved and supported builders.
+
+Think of it like having a catalog of highly-optimized Dockerfiles that you can choose from, except they're defined in a Real Programming Language.🙃
+
+A number of these SaaS platforms make their buildpacks available for use outside of their runtime platforms:
+
+- [Paketo Buildpacks](https://paketo.io/)
+- [GCP Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks)
+
+You can build your image from source with these builders, or fork them and create your own to meet your own needs.
+
+Buildpacks' [`pack` CLI](https://buildpacks.io/docs/tools/pack/) lets you run a builder on your source, but since the build steps aren't guaranteed to be isolated from your development environment, the build steps run in containers, requiring the Docker daemon to be running on your computer. Unlike `docker build`, however, Buildpacks can integrate more deeply with containerized CI/CD platforms like Tekton to avoid the need for containers-in-containers when running those environments.
+
+Buildpacks are an especially attractive choice if your team builds software in many languages, and if you can either use one of the provided open source buildpacks, or if your company can justify staffing an internal team to maintain your own.
+
 ## Closing Thoughts
 
 If I had to sum it all up, it would be this: understand the tools you're using, and understand why you should be using them. Understand the trade-offs, in developer productivity and in security, and if you're not comfortable with those trade-offs, use other tools, if those tools exist.
