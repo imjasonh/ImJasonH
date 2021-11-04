@@ -27,6 +27,7 @@ _would you?!_)
 
 ## Talks, etc.
 
+- [Argo and Tekton: Pushing the Boundaries of the Possible on Kubernetes](https://www.youtube.com/watch?v=iPRw_n_JV4o) at KubeCon 2021 w/ [Alex Collins](https://github.com/alexec)
 - [Russian Doll: Extending Containers with Nested Processes](https://www.youtube.com/watch?v=iz9_omZ0ctk) at KubeCon NA 2019 w/ [Christie Wilson](https://github.com/bobcatwilson)
 - [Introduction to Shipwright](https://www.youtube.com/watch?v=N5sVrygywZk) at cdCon 2021
 - [Continuous Delivery, Defined](https://cdeliveryfdn.buzzsprout.com/1008697/3823307-continuous-delivery-defined) on The Pipeline: All things CD & DevOps Podcast by The CD Foundation w/ [Dan Lorenc](https://github.com/dlorenc) and [Christie Wilson](https://github.com/bobcatwilson)
