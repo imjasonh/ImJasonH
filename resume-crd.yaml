@@ -42,17 +42,52 @@ spec:
   
 status:
   employment:
+  - company: Chainguard, Inc.
+    duration: 2022 - present
+
   - company: Red Hat, Inc.
-    duration: 2021 - present
+    duration: 2021 - 2022
+    teams:
+    - name: kcp
+      url: https://github.com/kcp-dev/kcp
+      description: |
+        Experimental prototype to provide a minimal Kubernetes API server
+        without many previously-built-in types, with a focus on low-cost
+        multitenancy in the control plane, safe API evolution, and support for
+        transparent multicluster workloads.
+      duration: 2021 - 2022
+      contributions:
+      - Led the team during early prototypes, built a demo for KubeCon EU 2021.
+      - Led external community engagement and outreach.
+      - Helped grow the team and its responsibilities internally.
+    - name: Continuous Delivery Foundation (CDF)
+      url: https://cd.foundation
+      description: |
+        A public foundation to share and evangelize best practices in
+        continuous delivery, as well as a vendor-neutral home for open source
+        projects in the space.
+      duration: 2021 - 2022
+      contributions:
+      - Represented Red Hat on the Governing Board as a premier member.
+      - Elected to the Technical Oversight Committee.
+    - name: Shipwright
+      url: https://shipwright.io
+      description: |
+        A simpler API for building container images on Kubernetes clusters,
+        built on Tekton.
+      duration: 2021 - 2022
+      contributions:
+      - Led the effort to donate the project to the CDF.
+
   - company: Google, Inc.
     duration: 2007 - 2021
     teams:
     - name: Tekton
       url: https://tekton.dev/
       description: |
-          Powerful and flexible open-source framework for creating CI/CD
-          systems, allowing developers to build, test, and deploy across cloud
-          providers and on-premise systems.
+        Powerful and flexible open-source framework for creating CI/CD
+        systems, allowing developers to build, test, and deploy across cloud
+        providers and on-premise systems.
       duration: 2019 - present
       contributions:
       - |
@@ -93,10 +128,10 @@ status:
     - name: Google Cloud Build
       url: https://cloud.google.com/cloud-build
       description: |
-          Hosted container-based build/test/deploy service with typical
-          sub-second start time, powering all App Engine and Cloud Functions
-          deployments
-      duration: 2015 - present
+        Hosted container-based build/test/deploy service with typical
+        sub-second start time, powering all App Engine and Cloud Functions
+        deployments.
+      duration: 2015 - 2021
       contributions:
       - |
         Launching Cloud Build on Kubernetes, powered by Tekton, to provide a
@@ -115,24 +150,21 @@ status:
     - name: Google Cloud Source Repositories
       url:  https://cloud.google.com/source-repositories
       description: |
-         Free hosted private Git repos and integrations with various Google
-         Cloud services
+        Free hosted private Git repos and integrations with various Google
+        Cloud services.
       contributions:
       - |
         Designed, built and launched secure two-way repo mirroring for GitHub
         and Bitbucket
+      - Repurposed and relaunched Google Code as a Google Cloud product
+      - Designed, built and launched Git push-to-deploy for App Engine.
       - |
-        Repurposed and relaunched infrastructure from Google Code as a Google
-        Cloud product
-      - |
-        Designed, built and launched Git push-to-deploy for App Engine
-      - |
-        Contributed to sunsetting Google Code; sole engineer on one-click
-        export-to-GitHub service which successfully migrated 400k+ repos
+        Sunsetted Google Code; built a on one-click export-to-GitHub service
+        which successfully migrated 400k+ repos
         
     - name: Google APIs
       description: |
-          Common infrastructure and client libraries for new Google APIs
+        Common infrastructure and client libraries for new Google APIs.
       duration: 2010 - 2011
       contributions:
       - |
@@ -141,15 +173,15 @@ status:
         
     - name: AdWords "My Client Center"
       description: |
-          Enabled large advertisers and resellers (e.g., eBay, Amazon) to
-          manage supermassive ad campaigns
+        Enabled large advertisers and resellers (e.g., eBay, Amazon) to manage
+        supermassive ad campaigns.
       duration: 2008 - 2010
       contributions:
       - Complete frontend rewrite in Google Web Toolkit (GWT)
       
     - name: Google Reader
       description: |
-          Web-based RSS reader; everyone's favorite cancelled Google product
+        Web-based RSS reader; everyone's favorite cancelled Google product
       duration: Summer 2007 (internship)
       contributions:
       - Improved feed-viewing experience for signed-out users
@@ -176,7 +208,8 @@ status:
     description: |
       Web UI to measure relative latency between your browser and GCP
       regions. Used by Google sales engieners to help customers pick a
-      region nearest to their customers.
+      region nearest to their customers. Since taken over by Google
+      maintainers.
       
   education:
   - name: Kent State University
