@@ -27,6 +27,7 @@ _would you?!_)
 
 ## Talks, etc.
 
+- [Securing the IaC Supply Chain](https://www.youtube.com/watch?v=ieiFsrgGRto) at KubeCon NA 2022 w/ [Jesse Sanford](https://github.com/jessesanford)
 - [Registries After Dark, Part 2: Distributed Random Access Merkledags](https://www.youtube.com/watch?v=Xt_G-pUArTM) at KubeCon EU 2022 w/ [Dan Mangum](https://github.com/hasheddan)
 - [Argo and Tekton: Pushing the Boundaries of the Possible on Kubernetes](https://www.youtube.com/watch?v=iPRw_n_JV4o) at KubeCon NA 2021 w/ [Alex Collins](https://github.com/alexec)
 - [Russian Doll: Extending Containers with Nested Processes](https://www.youtube.com/watch?v=iz9_omZ0ctk) at KubeCon NA 2019 w/ [Christie Wilson](https://github.com/bobcatwilson)
