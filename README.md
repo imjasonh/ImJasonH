@@ -25,7 +25,7 @@ kubectl apply -f https://raw.githubusercontent.com/ImJasonH/ImJasonH/main/resume
 first](https://raw.githubusercontent.com/ImJasonH/ImJasonH/main/resume-crd.yaml),
 _would you?!_)
 
-## Talks, etc.
+## Talks
 
 - [Securing the IaC Supply Chain](https://www.youtube.com/watch?v=ieiFsrgGRto) at KubeCon NA 2022 w/ [Jesse Sanford](https://github.com/jessesanford)
 - [Registries After Dark, Part 2: Distributed Random Access Merkledags](https://www.youtube.com/watch?v=Xt_G-pUArTM) at KubeCon EU 2022 w/ [Dan Mangum](https://github.com/hasheddan)
@@ -35,3 +35,12 @@ _would you?!_)
 - [Introduction to Shipwright](https://www.youtube.com/watch?v=N5sVrygywZk) at cdCon 2021
 - [Origin of Shipwright](https://www.youtube.com/watch?v=t3bSnaX4-aU) on CloudNative FM
 - [What does the Continuous Delivery Foundation do?](https://www.youtube.com/watch?v=ytE-6p2jtSU) on [communitycentral.tv](https://communitycentral.tv) w/ Adam Kaplan, Andrea Frittoli, Vincent Demeester
+
+## Blog Posts
+
+- [GitHub Container Registry private repos sometimes… weren’t](https://www.chainguard.dev/unchained/ghcr-private-repos-sometimes-werent)
+- [Building Wolfi from the ground up… and announcing arm64 support!
+](https://www.chainguard.dev/unchained/building-wolfi-from-the-ground-up-and-announcing-arm64-support)
+- [Chainguard enthusiastically supports donating ko to CNCF](https://www.chainguard.dev/unchained/chainguard-enthusiastically-supports-donating-ko-to-cncf)
+- [Transparently Immutable Tags using Sigstore's Rekor](https://www.chainguard.dev/unchained/transparently-immutable-tags-using-rekor)
+- [Shipwright: A framework for building container images on Kubernetes](https://developers.redhat.com/articles/2021/06/17/shipwright-framework-building-container-images-kubernetes)
