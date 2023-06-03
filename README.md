@@ -23,6 +23,9 @@ I build fun toys like https://kontain.me and https://gcping.com.
 
 ## Blog Posts
 
+- [Building Chainguard's Container Image Registry](https://www.chainguard.dev/unchained/building-chainguards-container-image-registry)
+- [Move Over, Dockerfiles! The New Way to Craft Containers
+](https://www.chainguard.dev/unchained/move-over-dockerfiles-the-new-way-to-craft-containers)
 - [GitHub Container Registry private repos sometimes… weren’t](https://www.chainguard.dev/unchained/ghcr-private-repos-sometimes-werent)
 - [Building Wolfi from the ground up… and announcing arm64 support!
 ](https://www.chainguard.dev/unchained/building-wolfi-from-the-ground-up-and-announcing-arm64-support)
