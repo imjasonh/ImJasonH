@@ -2,7 +2,7 @@
 
 ### (he/him)
 
-I work at [<img src="./chainguard.svg" alt="Chainguard" width="26" height="20" />Chainguard](https://chainguard.dev), securing software supply chains by default.
+I work at [<img src="./chainguard.svg" alt="Chainguard" width="26" height="20" />Chainguard](https://chainguard.dev) on infrastructure to build and deliver [Chainguard Images](https://www.chainguard.dev/chainguard-images).
 
 Before that I was at [<img src="./redhat.png" alt="Red Hat" width="26" height="20" /> Red Hat](https://redhat.com), and before that [<img src="./cloud.png" alt="Google Cloud" width="20" height="20" /> Google Cloud](https://cloud.google.com), where I cofounded [<img src="./gcb.png" alt="Google Cloud Build" width="20" height="20" /> Google Cloud Build](https://cloud.google.com/cloud-build) and [<img src="./tekton.png" alt="Tekton" width="20" height="20"/> Tekton](https://tekton.dev).
 
