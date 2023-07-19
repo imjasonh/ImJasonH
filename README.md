@@ -12,6 +12,7 @@ I build fun toys like https://kontain.me and https://gcping.com.
 
 ## Talks
 
+- [`ko`: The only good way to build Go containers](https://www.youtube.com/watch?v=goEjs22Ymk4) at GothamGo 2023
 - [Securing the IaC Supply Chain](https://www.youtube.com/watch?v=ieiFsrgGRto) at KubeCon NA 2022 w/ [Jesse Sanford](https://github.com/jessesanford)
 - [Registries After Dark, Part 2: Distributed Random Access Merkledags](https://www.youtube.com/watch?v=Xt_G-pUArTM) at KubeCon EU 2022 w/ [Dan Mangum](https://github.com/hasheddan)
 - [Argo and Tekton: Pushing the Boundaries of the Possible on Kubernetes](https://www.youtube.com/watch?v=iPRw_n_JV4o) at KubeCon NA 2021 w/ [Alex Collins](https://github.com/alexec)
@@ -23,12 +24,13 @@ I build fun toys like https://kontain.me and https://gcping.com.
 
 ## Blog Posts
 
+- [How Chainguard fixes vulnerabilities before they're detected](https://www.chainguard.dev/unchained/how-chainguard-fixes-vulnerabilities)
 - [Building Chainguard's Container Image Registry](https://www.chainguard.dev/unchained/building-chainguards-container-image-registry)
 - [Move Over, Dockerfiles! The New Way to Craft Containers
 ](https://www.chainguard.dev/unchained/move-over-dockerfiles-the-new-way-to-craft-containers)
 - [GitHub Container Registry private repos sometimes… weren’t](https://www.chainguard.dev/unchained/ghcr-private-repos-sometimes-werent)
 - [Building Wolfi from the ground up… and announcing arm64 support!
 ](https://www.chainguard.dev/unchained/building-wolfi-from-the-ground-up-and-announcing-arm64-support)
-- [Chainguard enthusiastically supports donating ko to CNCF](https://www.chainguard.dev/unchained/chainguard-enthusiastically-supports-donating-ko-to-cncf)
+- [Chainguard enthusiastically supports donating `ko` to CNCF](https://www.chainguard.dev/unchained/chainguard-enthusiastically-supports-donating-ko-to-cncf)
 - [Transparently Immutable Tags using Sigstore's Rekor](https://www.chainguard.dev/unchained/transparently-immutable-tags-using-rekor)
 - [Shipwright: A framework for building container images on Kubernetes](https://developers.redhat.com/articles/2021/06/17/shipwright-framework-building-container-images-kubernetes)
