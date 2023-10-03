@@ -10,7 +10,7 @@ I contribute to [`ko`](https://github.com/ko-build/ko) and [go-containerregistry
 
 I build fun toys like https://kontain.me and https://gcping.com.
 
-I sometimes make Chrome extensions to make my own life easier, like [this one]([url](https://github.com/imjasonh/chrome-sound)) and [this one]([url](https://github.com/imjasonh/chrome-sigstore)).
+I sometimes make Chrome extensions to make my own life easier, like [this one](https://github.com/imjasonh/chrome-sound) and [this one](https://github.com/imjasonh/chrome-sigstore).
 Maybe they'll make your life easier too, I have no idea.
 
 ## Talks
