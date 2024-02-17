@@ -15,6 +15,7 @@ Maybe they'll make your life easier too, I have no idea.
 
 ## Talks
 
+- [Building containers without Docker](https://changelog.com/shipit/91) on the _Ship It!_ podcast in Feb 2024
 - [`ko`: The only good way to build Go containers](https://www.youtube.com/watch?v=goEjs22Ymk4) at GothamGo 2023
 - [Securing the IaC Supply Chain](https://www.youtube.com/watch?v=ieiFsrgGRto) at KubeCon NA 2022 w/ [Jesse Sanford](https://github.com/jessesanford)
 - [Registries After Dark, Part 2: Distributed Random Access Merkledags](https://www.youtube.com/watch?v=Xt_G-pUArTM) at KubeCon EU 2022 w/ [Dan Mangum](https://github.com/hasheddan)
