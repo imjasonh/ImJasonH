@@ -6,7 +6,7 @@ I work at [<img src="./chainguard.svg" alt="Chainguard" width="26" height="20" /
 
 Before that I was at [<img src="./redhat.png" alt="Red Hat" width="26" height="20" /> Red Hat](https://redhat.com), and before that [<img src="./cloud.png" alt="Google Cloud" width="20" height="20" /> Google Cloud](https://cloud.google.com), where I cofounded [<img src="./gcb.png" alt="Google Cloud Build" width="20" height="20" /> Google Cloud Build](https://cloud.google.com/cloud-build) and [<img src="./tekton.png" alt="Tekton" width="20" height="20"/> Tekton](https://tekton.dev).
 
-I contribute to [`ko`](https://github.com/ko-build/ko) and [go-containerregistry](https://github.com/google/go-containerregistry), [Wolfi](https://wolfi.dev), and a number of other things.
+I contribute to [`ko`](https://github.com/ko-build/ko) and [go-containerregistry](https://github.com/google/go-containerregistry), [Wolfi](https://wolfi.dev), [Apko](https://apko.dev), [Melange](https://github.com/chainguard-dev/melange), and a number of other things.
 
 I build fun toys like https://kontain.me and https://gcping.com.
 
