@@ -4,6 +4,8 @@ https://articles.imjasonh.com/go-things-clog.md<br>
 Jason Hall<br>
 _First published August 9, 2024_
 
+-----
+
 In 2023, Go 1.21 added the `log/slog` package. You can read all about it [on the Go blog](https://go.dev/blog/slog) and in [the godoc](https://pkg.go.dev/log/slog).
 
 `slog` improves on the venerable [`log`](https://pkg.go.dev/log) package by adding "structured logging", where you can attach arbitrary key/values to loggers.
