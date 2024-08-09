@@ -1,8 +1,9 @@
 # OCI Base Image Annotations
 
-https://articles.imjasonh.com/go-things-if-err.md<br>
+https://articles.imjasonh.com/oci-base-image-annotations<br>
 Jason Hall<br>
-_First published August 9, 2024_
+_First published July 30, 2021_<br>
+_Last updated August 12, 2021_
 
 ---
 
