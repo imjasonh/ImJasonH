@@ -1,5 +1,9 @@
 # Go Things I like: `if err :=`
 
+https://articles.imjasonh.com/go-things-if-err.md<br>
+Jason Hall<br>
+_First published August 9, 2024_
+
 Let's say there's a method you want to call, and it might fail. One standard way to do this is:
 
 ```go
