@@ -24,12 +24,12 @@ But, I wanted contextual logging anyway. And luckily, [**@wlynch**](https://gith
 
 ```go
 func main() {
-  ctx := context.Background()
-  f(ctx)
+	ctx := context.Background()
+	f(ctx)
 }
 
 func f(ctx context.Context) {
-  clog.FromContext(ctx).Info("you are in f")
+	clog.FromContext(ctx).Info("you are in f")
 }
 ```
 
@@ -39,10 +39,10 @@ Having a logger in your context means you can _add_ structured context to your l
 
 ```go
 func f(ctx context.Context) {
-  log := clog.FromContext(ctx).With("inside", "f")
-  log.Info("you are in f")
-  ctx = clog.WithLogger(log)
-  g(ctx)
+	log := clog.FromContext(ctx).With("inside", "f")
+	log.Info("you are in f")
+	ctx = clog.WithLogger(log)
+	g(ctx)
 }
 ```
 
@@ -64,7 +64,7 @@ I even added a `clog/gcp/init` package that can be underscore-imported to set th
 
 ```
 import (
-  _ "github.com/chainguard-dev/clog/gcp/init"
+	_ "github.com/chainguard-dev/clog/gcp/init"
 )
 ```
 
@@ -92,7 +92,7 @@ This lets you do `go run ./cmd/server --log-level=debug` or `--log-level=warn` t
 ```go
 func TestExample(t *testing.T) {
 	ctx := slogtest.Context(t)
-  f(ctx)
+	f(ctx)
 }
 ```
 
