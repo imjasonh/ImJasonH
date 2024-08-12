@@ -197,4 +197,4 @@ What do you think?
 
 -----
 
-**edit (Aug 12)**: [**@dluhring**](https://github.com/dluhring) pointed to https://github.com/golang/go/issues/28987 which seems _way more thoroughly considered_ than my basic proposal, and it seems to have some real momentum behind it! I've subscribed and I'm hopeful it'll come to pass! 🤞
+**edit (Aug 12)**: [**@luhring**](https://github.com/luhring) pointed to https://github.com/golang/go/issues/28987 which seems _way more thoroughly considered_ than my basic proposal, and it seems to have some real momentum behind it! I've subscribed and I'm hopeful it'll come to pass! 🤞
