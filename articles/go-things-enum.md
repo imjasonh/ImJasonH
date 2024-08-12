@@ -194,3 +194,7 @@ If we ever define a new planet, that `switch` statement would not compile until 
 Like I said, this is just a very quick sketch! How would this work with embedding, interfaces, type constraits, and so on? I don't know. But I think there's value enough in having a real answer for `enum`s in the Go language to be worth exploring it. And I believe the Go team has the chops to make it not only good, but _great_, in their typical fashion.
 
 What do you think?
+
+-----
+
+**edit (Aug 12)**: [**@dluhring**](https://github.com/dluhring) pointed to https://github.com/golang/go/issues/28987 which seems _way more thoroughly considered_ than my basic proposal, and it seems to have some real momentum behind it! I've subscribed and I'm hopeful it'll come to pass! 🤞
