@@ -15,6 +15,7 @@ Maybe they'll make your life easier too, I have no idea.
 
 ## Talks
 
+- [Securing Cloud Native Applications](https://www.youtube.com/live/cKXMxK1lbWI?si=9CpQQbrsAKR6D1mJ&t=23183) at Cloud Native Rejekts NA Nov 2024 w/ [Jed Salazar](https://github.com/jedsalazar)
 - [Building containers without Docker](https://changelog.com/shipit/91) on the _Ship It!_ podcast in Feb 2024
 - [`ko`: The only good way to build Go containers](https://www.youtube.com/watch?v=goEjs22Ymk4) at GothamGo 2023
 - [Securing the IaC Supply Chain](https://www.youtube.com/watch?v=ieiFsrgGRto) at KubeCon NA 2022 w/ [Jesse Sanford](https://github.com/jessesanford)
