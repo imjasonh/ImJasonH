@@ -30,6 +30,7 @@ Maybe they'll make your life easier too, I have no idea.
 
 ## Blog Posts
 
+- [Migrating Chainguard's Serving Infrastructure to Cloud Run](https://www.chainguard.dev/unchained/migrating-chainguards-serving-infrastructure-to-cloud-run)
 - [Wolfi at work: Minimal developer workstations in the cloud](https://www.chainguard.dev/unchained/wolfi-at-work-minimal-developer-workstations-in-the-cloud)
 - [The story of the most vulnerable Chainguard Image](https://www.chainguard.dev/unchained/the-story-of-the-most-vulnerable-chainguard-image)
 - [Chainguard's Image Tagging Philosophy: Enabling High Velocity Updates, Part 1](https://www.chainguard.dev/unchained/chainguards-image-tagging-philosophy-enabling-high-velocity-updates-pt-1-of-3), [Part 2](https://www.chainguard.dev/unchained/chainguards-image-tagging-philosophy-enabling-high-velocity-updates-pt-2-of-3), [Part 3](https://www.chainguard.dev/unchained/chainguards-image-tagging-philosophy-enabling-high-velocity-updates-pt-3-of-3)
