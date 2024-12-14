@@ -14,13 +14,29 @@ In 2023, Go 1.21 added the `log/slog` package. You can read all about it [on the
 logger.With("url", r.URL).Info("got request to URL")
 ```
 
-Before `slog` was in the Go standard library, there was [`uber-go/zap`](https://github.com/uber-go/zap), and [`siprupsen/logrus`](https://github.com/sirupsen/logrus) and a few others. I'm really glad they adopted it into the standard library, and in typical Go team fashion, it's an insanely small but powerful package. I like it enough to write about it here.
+When this line gets logged, it will have the url attached in a structured way, and the log message will be marked as being `Info` as opposed to `Warn` or `Error` or `Debug`. The `logger` at the logging callsite doesn't have to know how the log handler will surface that structured value, or whether the handler will emit anything at all for certain levels. This makes it easy to log _more_ than you actually want at the callsite, then control whether to actually log it once at the top of your program.
+
+There are two built-in log handlers, [`TextHandler`](https://pkg.go.dev/log/slog#TextHandler) and [`JSONHandler`](https://pkg.go.dev/log/slog#JSONHandler), which emit logs in regular text and JSON-encoded values, respectively. Since it's an interface, you can implement your own handler to emit however and in whatever format you want, but text and JSON are the most common.
+
+`TextHandler` looks like this:
+
+```
+time=2009-11-10T23:00:00.000Z level=INFO msg="got request to URL" url=https://www.google.com
+```
+
+`JSONHandler` looks like this:
+
+```
+{"time":"2009-11-10T23:00:00Z","level":"INFO","msg":"got request to URL","url":"https://www.google.com"}
+```
+
+Before `slog` was in the Go standard library, there was [`uber-go/zap`](https://github.com/uber-go/zap), and [`siprupsen/logrus`](https://github.com/sirupsen/logrus) and a few others, that had the same goal. I'm really glad they adopted structured logging into the standard library, and in typical Go team fashion, it's an insanely small but powerful package. I like it enough to write about it here.
 
 ## Missing Context
 
-Coming from `zap` and `logrus`, the first thing I immediately wanted was a way to stuff my logger into a `context.Context`, and pull it back out again. I'm a little surprised `slog` didn't come with this, but 🤷‍♂️ that's their choice. Decisions like that are how you end up with an insanely small and powerful package.
+Coming from `zap` and `logrus`, the first thing I immediately wanted was a way to stuff my logger into a `context.Context`, and pull it back out again when I wanted to write a log message. I'm a little surprised `slog` didn't come with this, but 🤷‍♂️ that's their choice. Decisions like that are how you end up with an insanely small and powerful package.
 
-But, I wanted contextual logging anyway. And luckily, [**@wlynch**](https://github.com/wlynch) did too. He started the delightfully-named https://github.com/chainguard-dev/clog.
+But, I wanted contextual logging anyway. And luckily, [**@wlynch**](https://github.com/wlynch) did too. He started the delightfully-named [`clog`](https://github.com/chainguard-dev/clog).
 
 ```go
 func main() {
@@ -50,6 +66,10 @@ With this, anything inside `g` that uses the logger inside the context, also get
 
 There's a lot more to `clog`, but even just having context-awareness was enough to make me want to migrate everything we had from our previous structured logging package to `slog` and `clog`.
 
+---
+
+There is a `Context`-aware version of `slog.Info` et al, called [`slog.InfoContext`](https://pkg.go.dev/log/slog#InfoContext) appropriately enough. This takes a `context.Context` which gets passed to the handler's `Handle` method, where a custom handler implementation could extract values from that context and add them as attributes. This is ..._fine_..., but it precludes using the built-in handler implementations, and it's just sort of ...clunky. I prefer using `clog` to pass around a normal Logger. I'm open to hearing why that's wrong though.
+
 ## How Very Ungoogley of You!
 
 When you log `With` something, you can see the extra context in the log output, and use `grep` to filter your logs. But where structured logging _really_ shines is when your logs end up in a managed logging solution. Being a GCP fanboy, I'm talking about Cloud Logging.
@@ -63,9 +83,7 @@ But that's okay, that's nothing we can't fix with a little adapter package! And 
 I even added a `clog/gcp/init` package that can be underscore-imported to set the GCP logger as the default, so leveling up your GCP logging game in Go is just one `import` line at the top of your `package main`.
 
 ```
-import (
-	_ "github.com/chainguard-dev/clog/gcp/init"
-)
+import _ "github.com/chainguard-dev/clog/gcp/init"
 ```
 
 All of `clog`'s GCP-aware features were originated in https://github.com/remko/cloudrun-slog, which we forked and modified nearly beyond recognition, but the basic idea was [**@remko**](https://github.com/remko)'s. Great stuff.
