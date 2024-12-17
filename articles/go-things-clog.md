@@ -121,7 +121,35 @@ func TestExample(t *testing.T) {
 	slogtest.go:24: level=INFO source=/path/to/example_test.go:13 msg="you are in f" inside=f
 ```
 
-These are simple little adapters that make day-to-day life building a distributed system in Go more pleasant, and more maintainable. I'm really happy with how they've turned out.
+(This one has nothing to do with `clog`, but) [`charmbracelet/log`](https://github.com/charmbracelet/log?tab=readme-ov-file#slog-handler) is also compatible with `slog`, for easy colorful CLI logs. It's like `TextHandler` but just a little better, if you're willing to take on the dependency.
+
+```
+package main
+
+import (
+	"log/slog"
+	"github.com/charmbracelet/log"
+)
+
+func main() {
+	slog.SetDefault(slog.New(log.NewWithOptions(os.Stderr, log.Options{ReportTimestamp: true})))
+
+	...
+	clog.FromContext(ctx).With("foo", "bar").Infof("hello world")
+}
+```
+
+...produces...
+
+```
+2009/11/10 23:00:00 INFO hello world foo=bar
+```
+
+(but with color, you'll just have to trust me)
+
+---
+
+These are simple little adapters that make day-to-day life building distributed systems and CLIs in Go more pleasant, and more maintainable. I'm really happy with how they've turned out.
 
 Oh! And did I mention, [`clog` has zero dependencies outside of the standard library](https://github.com/chainguard-dev/clog/blob/main/go.mod)? That one's a little bonus for all the folks who read all the way to the bottom.
 
