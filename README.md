@@ -15,6 +15,7 @@ Maybe they'll make your life easier too, I have no idea.
 
 ## Talks
 
+- [From Kubernetes to Cloud Run: Chainguard's Journey](https://www.youtube.com/watch?v=2SWfcmcFjf4) on [Rawkode Academy](https://www.youtube.com/@RawkodeAcademy)
 - [The Maintainer Monologues](https://www.youtube.com/watch?v=Qf1_5rU-Fts) at KubeCon NA 2024 w/ [Sarah Christoff](https://github.com/schristoff), [Scott Rigby](https://github.com/scottrigby), [Karen Chu](https://github.com/karenhchu) and [Ryan Nowak](https://github.com/rynowak)
 - [Secure-by-Default Cloud Native Applications](https://www.youtube.com/watch?v=1yDN_kMjleM) at Cloud Native Rejekts NA Nov 2024 w/ [Jed Salazar](https://github.com/jedsalazar)
 - [Building containers without Docker](https://changelog.com/shipit/91) on the _Ship It!_ podcast in Feb 2024
