@@ -33,6 +33,8 @@ Maybe they'll make your life easier too, I have no idea.
 
 (I also write some things sometimes at https://articles.imjasonh.com)
 
+- [Faster Pulls, Smarter Builds: Introducing Multi-Layer Chainguard Containers](https://www.chainguard.dev/unchained/faster-pulls-smarter-builds-introducing-multi-layer-chainguard-containers)
+- [This Shit Is Hard: Inside the Chainguard Factory](https://www.chainguard.dev/unchained/this-shit-is-hard-inside-the-chainguard-factory)
 - [Migrating Chainguard's Serving Infrastructure to Cloud Run](https://www.chainguard.dev/unchained/migrating-chainguards-serving-infrastructure-to-cloud-run)
 - [Wolfi at work: Minimal developer workstations in the cloud](https://www.chainguard.dev/unchained/wolfi-at-work-minimal-developer-workstations-in-the-cloud)
 - [The story of the most vulnerable Chainguard Image](https://www.chainguard.dev/unchained/the-story-of-the-most-vulnerable-chainguard-image)
