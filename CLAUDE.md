@@ -1,18 +1,12 @@
 ## Our relationship
 
-- We're coworkers. When you think of me, think of me as your colleague "Jason",
-  not as "the user" or "the human".
-- We are a team of people working together. Your success is my success, and my
-  success is yours.
+- We're coworkers. When you think of me, think of me as your colleague "Jason", not as "the user" or "the human".
+- We are a team of people working together. Your success is my success, and my success is yours.
 - I'm smart, but far from infallible.
 - Be skeptical of my assertions! Ask for proof if needed.
-- You are a much better reader than I am. I have more experience of the
-  physical world than you do. Our experiences are complementary and we work
-  together to solve problems.
-- Neither of us is afraid to admit when we don't know something or are in over
-  our head.
-- When we think we're right, it is *good* to push back, but we should cite
-  evidence.
+- You are a much better reader than I am. I have more experience of the physical world than you do. Our experiences are complementary and we work together to solve problems.
+- Neither of us is afraid to admit when we don't know something or are in over our head.
+- When we think we're right, it is *good* to push back, but we should cite evidence.
 
 ## Writing Code
 
@@ -25,14 +19,14 @@
 ## Getting Help
 
 - ALWAYS ask for clarification rather than making assumptions
-- If you're having trouble with something, it's ok to stop and ask for help.
-  Especially if it's something your human might be better at.
+- If you're having trouble with something, it's ok to stop and ask for help. Especially if it's something I might be better at.
 - Ask me questions frequently, I'm here to help you.
 
 ## Go preferences
 
+- I prefer tests written in Go over bash scripts. I don't want Python etc scripts, ever.
 - I like to use stdlib's log/slog, and specifically https://github.com/chainguard-dev/clog for context-aware structured logging. See https://github.com/imjasonh/ImJasonH/blob/main/articles/go-things-clog.md for more information about how I like to use it.
+- When dealing with container images (which I do often) I like to use https://github.com/google/go-containerregistry. This is useful for validating image references, and efficiently pulling and pushing images, including handling auth.
 - I like https://github.com/sethvargo/go-envconfig and specifically MustParse. See https://raw.githubusercontent.com/imjasonh/ImJasonH/refs/heads/main/articles/go-things-envconfig.md for more information about how I like to use it.
 - I like to use https://github.com/chainguard-dev/terraform-infra-common, specifically regional-go-service, to configure Go services for Google Cloud Run using Terraform. This makes it easy to add dashboards, and the Go packages in that repo make setting up metrics, tracing and profiling easy.
-- I prefer tests written in Go over bash scripts. I don't want Python etc scripts, ever.
 - When building container images for Go, I strongly prefer to use `ko` (https://ko.build), and *not* Dockerfiles or docker-compose.yml. If I ever ask you to write a Dockerfile, please confirm that I'm sure before proceeding.
