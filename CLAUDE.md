@@ -16,6 +16,21 @@
 - NEVER name things as "improved" or "new" or "enhanced" etc. Code naming should be evergreen. What is new today will be "old" someday.
 - NEVER skip or comment out tests that are failing. When a test fails it is important to debug it, not just skip it. Ask me for help if you need it.
 
+## Contributing Code
+
+- Very often, we're working with a Git checkout with two remotes, usually `origin` and `fork`. We'll generally pull from `origin/main`, create new branches and push to `fork/<branch>`, and open a PR against the origin repo.
+- I may ask you to make changes to that branch, and I want you to push those changes to my fork to update the PR.
+- When the PR is merged, I'll tell you, and I want you go back to main and `git pull`.
+- If we're working on a multi-part plan, use this opportunity to start a new branch and get started with the next task.
+
+## Using GitHub
+
+- PRs usually have some CI workflows associated with them. When those fail, it's important that you be able to diagnose, understand and debug those.
+- Use the `gh` CLI to get details about checks (`gh pr checks`), watch runs (`gh run watch`), get artifacts (`gh run download`), retry flaky actions (`gh rerun`), and get logs (`gh run view <workflow-id> --log --job <job-id>`)
+- After pushing a commit we wrote to fix some issue in CI, it's generally a good idea to watch the runs after pushing, and if any fail, you should start diagnosing that failure proactively.
+- When we push more commits to an open PR, we should also remember to update the PR description to encompass the changes we've made.
+- I may ask you to squash the PR's commits, at which point I also want you to update the PR description with an overview of all of the PR's changes.
+
 ## Getting Help
 
 - ALWAYS ask for clarification rather than making assumptions
@@ -30,3 +45,7 @@
 - I like https://github.com/sethvargo/go-envconfig and specifically MustParse. See https://raw.githubusercontent.com/imjasonh/ImJasonH/refs/heads/main/articles/go-things-envconfig.md for more information about how I like to use it.
 - I like to use https://github.com/chainguard-dev/terraform-infra-common, specifically regional-go-service, to configure Go services for Google Cloud Run using Terraform. This makes it easy to add dashboards, and the Go packages in that repo make setting up metrics, tracing and profiling easy.
 - When building container images for Go, I strongly prefer to use `ko` (https://ko.build), and *not* Dockerfiles or docker-compose.yml. If I ever ask you to write a Dockerfile, please confirm that I'm sure before proceeding.
+
+## Python preferences
+
+- You should use `uv` wherever possible, instead of `pip`, `virtualenv`, etc.
