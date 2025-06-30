@@ -33,6 +33,7 @@ Maybe they'll make your life easier too, I have no idea.
 
 (I also write some things sometimes at https://articles.imjasonh.com)
 
+- [This Shit is Hard: Vulnerability Scanner Integration](https://www.chainguard.dev/unchained/this-shit-is-hard-vulnerability-scanner-integration)
 - [Faster Pulls, Smarter Builds: Introducing Multi-Layer Chainguard Containers](https://www.chainguard.dev/unchained/faster-pulls-smarter-builds-introducing-multi-layer-chainguard-containers)
 - [This Shit Is Hard: Inside the Chainguard Factory](https://www.chainguard.dev/unchained/this-shit-is-hard-inside-the-chainguard-factory)
 - [Migrating Chainguard's Serving Infrastructure to Cloud Run](https://www.chainguard.dev/unchained/migrating-chainguards-serving-infrastructure-to-cloud-run)
