@@ -13,6 +13,8 @@ I build fun toys like https://kontain.me and https://gcping.com.
 I sometimes make Chrome extensions to make my own life easier, like [this one](https://github.com/imjasonh/chrome-sound) and [this one](https://github.com/imjasonh/chrome-sigstore).
 Maybe they'll make your life easier too, I have no idea.
 
+🤖 [My CLAUDE.md](https://github.com/imjasonh/imjasonh/blob/main/CLAUDE.md)
+
 ## Talks
 
 - [From Kubernetes to Cloud Run: Chainguard's Journey](https://www.youtube.com/watch?v=2SWfcmcFjf4) on [Rawkode Academy](https://www.youtube.com/@RawkodeAcademy)
