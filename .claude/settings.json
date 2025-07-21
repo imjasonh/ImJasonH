@@ -1,0 +1,16 @@
+{
+  "model": "opus",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/goimports.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
